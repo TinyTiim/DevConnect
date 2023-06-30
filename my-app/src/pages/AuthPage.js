@@ -5,7 +5,7 @@ const AuthPage = (props) => {
       e.preventDefault();
       const { value } = e.target[0];
       axios.post(
-          'http://localhost:3000/authenticate',
+          'http://localhost:3001/authenticate',
           {username: value}
       )
       .then(Response => props.onAuth({ ...Response.data, secret:value} ))
