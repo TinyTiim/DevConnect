@@ -1,1 +1,26 @@
-[{}] 
+[
+    {
+        "username": "Alexia",
+        "name": "Alexia",
+        "biography": "--will be add later--.",
+        "Avatar": "--will add later--"
+    },
+    {
+        "username": "Anirudh",
+        "name": "Anirudh",
+        "biography": "--will be add later--.",
+        "Avatar": "--will add later--"
+    },
+    {
+        "username": "Blake",
+        "name": "Blake",
+        "biography": "Turtles are pretty stinking rad.",
+        "Avatar": "--will add later--"
+    },
+    {
+        "username": "Sophia",
+        "name": "Sophia",
+        "biography": "--will be add later--.",
+        "Avatar": "--will add later--"
+    }
+] 
