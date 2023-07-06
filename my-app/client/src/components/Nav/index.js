@@ -1,9 +1,9 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import "./nav.css";
 
 function Nav() {
-
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
@@ -19,20 +19,19 @@ function Nav() {
     } else {
       return (
         <ul className="flex-row">
+          
           <li className="mx-1">
-            <Link to="/profile">
-              Profile
-            </Link>
+            <Link to="/">Home</Link>
+          </li>
+        
+          <li className="mx-1">
+            <Link to="/profile">Profile</Link>
           </li>
           <li className="mx-1">
-            <Link to="/chats">
-              Chat
-            </Link>
+            <Link to="/chats">Chat</Link>
           </li>
           <li className="mx-1">
-            <Link to="/community">
-              Community
-            </Link>
+            <Link to="/community">Community</Link>
           </li>
         </ul>
       );
@@ -40,18 +39,10 @@ function Nav() {
   }
 
   return (
-    <header className="flex-row px-1">
-      <h1>
-        <Link to="/">
-          <span role="img" aria-label=""></span>
-          Home
-        </Link>
-      </h1>
-
-      <nav>
-        {showNavigation()}
-      </nav>
-    </header>
+    <div className="container">
+      <aside className="sidebar">{showNavigation()}</aside>
+      
+  </div>
   );
 }
 
