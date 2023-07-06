@@ -1,3 +1,11 @@
 const mongoose = require('mongoose');
 
-// add the mongoose connection script
+mongoose.connect(
+    process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/DevConnect',
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    }
+);
+
+module.exports = mongoose.connextion;
