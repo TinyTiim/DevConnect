@@ -10,11 +10,15 @@ import Nav from './components/Nav';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
-  const [user, setUser] = useState(undefined);
+const App = () => {
+  const [user, setUser] = useState(null);
+
+  const handleAuth = (userData) => {
+    setUser(userData);
+  };
 
   if (!user) {
-    return <AuthPage onAuth={(user) => setUser(user)} />;
+    return <AuthPage onAuth={handleAuth} />;
   } else {
     return (
       // <ApolloProvider client={client}>
@@ -31,9 +35,9 @@ function App() {
                   path="/chats" 
                   element={<ChatsPage user={user} />} 
                 />
-                <Route 
-                  path="/profile" 
-                  element={<ProfilePage />} 
+              <Route 
+              path="/profile" 
+              element={<ProfilePage username={user.username} />} 
                 />
                 <Route 
                   path="/community" 

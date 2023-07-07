@@ -5,41 +5,63 @@ import "./nav.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faUser, faComments, faBullhorn } from '@fortawesome/free-solid-svg-icons';
 
-
 function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <a href="/" onClick={() => Auth.logout()}>
-              Logout
-            </a>
+        <ul className="navbar">
+          <li className="navbar-item">
+            <FontAwesomeIcon icon={faHouse} className="fa-bounce" size="2x" color="blue" />
+            <span className="navbar-item-text">
+              <Link to="/">Home</Link>
+            </span>
+          </li>
+          <li className="navbar-item">
+            <FontAwesomeIcon icon={faUser} className="fa-bounce" size="2x" color="blue" />
+            <span className="navbar-item-text">
+              <Link to="/profile">Profile</Link>
+            </span>
+          </li>
+          <li className="navbar-item">
+            <FontAwesomeIcon icon={faComments} className="fa-bounce" size="2x" color="blue" />
+            <span className="navbar-item-text">
+              <Link to="/chats">Chat</Link>
+            </span>
+          </li>
+          <li className="navbar-item">
+            <FontAwesomeIcon icon={faBullhorn} className="fa-bounce" size="2x" color="blue" />
+            <span className="navbar-item-text">
+              <Link to="/community">Coming soon. . .</Link>
+            </span>
           </li>
         </ul>
       );
     } else {
       return (
-        <div className="flex-row">
-          <FontAwesomeIcon icon={faHouse}  className="fa-bounce" size="4x" color="blue" />
-          <h2 className="mx-1">
-            
-            <Link to="/">Home</Link>
+        <div className="navbar">
+          <h2 className="navbar-item">
+            <FontAwesomeIcon icon={faHouse} className="fa-bounce" size="4x" color="blue" />
+            <span className="navbar-item-text">
+              <Link to="/">Home</Link>
+            </span>
           </h2>
-          <FontAwesomeIcon icon={faUser} className="fa-bounce" size="4x" color="blue" />
-          <h2 className="mx-1">
-            
-            <Link to="/profile">Profile</Link>
+          <h2 className="navbar-item">
+            <FontAwesomeIcon icon={faUser} className="fa-bounce" size="4x" color="blue" />
+            <span className="navbar-item-text">
+              <Link to="/profile">Profile</Link>
+            </span>
           </h2>
-          <FontAwesomeIcon icon={faComments}  className="fa-bounce" size="4x" color="blue" />
-          <h2 className="mx-1">
-          
-            <Link to="/chats">Chat</Link>
+          <h2 className="navbar-item">
+            <FontAwesomeIcon icon={faComments} className="fa-bounce" size="4x" color="blue" />
+            <span className="navbar-item-text">
+              <Link to="/chats">Chat</Link>
+            </span>
           </h2>
-          <FontAwesomeIcon icon={faBullhorn} className="fa-bounce"  size="4x" color="blue"/>
-          <h2 className="mx-1">
-          
-            <Link to="/community">Community</Link>
+          <h2 className="navbar-item">
+            <FontAwesomeIcon icon={faBullhorn} className="fa-bounce" size="4x" color="blue" />
+            <span className="navbar-item-text">
+              <Link to="/community">Coming soon</Link>
+            </span>
           </h2>
         </div>
       );
@@ -48,7 +70,7 @@ function Nav() {
 
   return (
     <div className="container">
-      <aside className="sidebar">{showNavigation()}</aside>
+      {showNavigation()}
     </div>
   );
 }
