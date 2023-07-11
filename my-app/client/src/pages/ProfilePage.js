@@ -45,16 +45,16 @@ const ProfilePage = ({ username }) => {
       <main>
       <section className="profile">
           <h1 id="profile-name">{username}</h1>
-          <div
+          <div class="profile-divs"
             id="profile-avatar"
             style={{ backgroundImage: `url(${avatar})` }}
           ></div>
           <p id="profile-bio">{bio}</p>
-          <div>
+          <div class="profile-divs">
             <label htmlFor="bio">Bio:</label>
             <textarea id="bio" value={bio} onChange={handleBioChange}></textarea>
           </div>
-          <div>
+          <div class="profile-divs">
             <label htmlFor="avatar">Profile Icon:</label>
             <input type="file" id="avatar" onChange={handleAvatarChange} />
           </div>
