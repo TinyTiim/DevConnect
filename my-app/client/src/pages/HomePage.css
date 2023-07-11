@@ -17,6 +17,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 5px;
   text-align: center; /* Center the profile section */
+  margin-top: 100px;
 }
 
 #profile-avatar {
@@ -29,6 +30,19 @@ body {
   background-size: cover; /* Scale the image to cover the div */
 }
 
+.profile-divs{
+  padding: 10px;
+}
+
+label{
+  float: left;
+}
+
+textarea{
+  width: 75%;
+  height: 55px;
+}
+
 #edit-profile-btn {
   background-color: #3b5998;
   color: #fff;
@@ -36,4 +50,6 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 25px;
+  margin-top: 15px;
 }

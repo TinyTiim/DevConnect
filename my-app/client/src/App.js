@@ -5,10 +5,14 @@ import ChatsPage from "./pages/ChatsPage";
 import HomePage from "./pages/HomePage";
 import ProfilePage from "./pages/ProfilePage";
 import CommunityBoardPage from "./pages/CommunityBoard";
-
 import Nav from './components/Nav';
-
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+const client = new ApolloClient({
+  uri: '/graphql',
+  cache: new InMemoryCache(),
+});
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -21,7 +25,7 @@ const App = () => {
     return <AuthPage onAuth={handleAuth} />;
   } else {
     return (
-      // <ApolloProvider client={client}>
+       <ApolloProvider client={client}>
         <Router>
           <div>
             
@@ -47,7 +51,7 @@ const App = () => {
             
           </div>
         </Router>
-
+      </ApolloProvider>
        
      
     );

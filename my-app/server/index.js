@@ -14,7 +14,7 @@ app.post("/authenticate", async (req, res) => {
         const response = await axios.put(
             'https://api.chatengine.io/users/',
             {username: username, secret: username, first_name: username},
-            {headers: {"private-key": "8f7a053a-3d12-4e15-aece-f48d89860cd9"}}
+            {headers: {"private-key": "9dc4c3ed-a93d-4623-af28-2f1864811a3f"}}
         )
         return res.status(response.status).json(response.data)
     } catch (e) {
@@ -23,8 +23,8 @@ app.post("/authenticate", async (req, res) => {
 });
 
 //project id 
-// 78010dcf-ab80-48a2-9842-115d2c628ce4
+// 52a95cce-d78f-4c16-ac34-c48d03d414f4
 //project key
-// 8f7a053a-3d12-4e15-aece-f48d89860cd9
+// 9dc4c3ed-a93d-4623-af28-2f1864811a3f
 
 app.listen(3001);
