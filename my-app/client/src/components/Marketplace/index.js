@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { START_TECH, STOP_TECH, ADD_TECH } from '../../utils/actions';
 
+import './marketplace.css'
+
 export default function MarketplaceComponent() {
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
@@ -12,7 +14,10 @@ export default function MarketplaceComponent() {
 
   return (
     <>
+     <div className="">
       <h1>Tech Marketplace</h1>
+      </div>
+      <div className="">
       <section className="tech-input">
         <div>
           <div className="add-tech">
@@ -52,6 +57,8 @@ export default function MarketplaceComponent() {
           </div>
         </div>
       </section>
+      </div>
+      <div className="">
       <section className="tech-list">
         {console.log(state)}
         {state.techs.map((tech) => (
@@ -70,7 +77,7 @@ export default function MarketplaceComponent() {
               </code>
             </div>
             <span style={{ fontSize: '1rem' }}>
-              {tech.isRunning ? 'tech is available 🏎️' : 'tech is sold 💤'}
+              {tech.isRunning ? 'available 💻' : 'sold ❌'}
               <button
                 id="turnOn"
                 onClick={
@@ -79,12 +86,13 @@ export default function MarketplaceComponent() {
                     : () => dispatch({ type: STOP_TECH, payload: tech.id })
                 }
               >
-                Toggle Engine
+                Toggle
               </button>
             </span>
           </div>
         ))}
       </section>
+      </div>
     </>
   );
 }

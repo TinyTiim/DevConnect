@@ -2,8 +2,9 @@ import React from 'react'
 import MarketplaceComponent from '../components/Marketplace';
 import TechProvider from '../utils/TechContext';
 
+
 const CommunityBoardPage = () => {
-    return (
+    return ( 
         <TechProvider>
           <MarketplaceComponent />
         </TechProvider>

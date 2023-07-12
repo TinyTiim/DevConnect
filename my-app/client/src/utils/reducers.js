@@ -13,8 +13,8 @@ const initalState = {
     },
     {
       id: 2,
-      make: 'Tesla',
-      model: 'Y',
+      make: 'Cozoo',
+      model: 'cozoo Headphone Stand with USB Charger Under Desk Headset Holder Mount with 3 Port USB Charging Station and iWatch Stand Smart Watch Charging Dock Dual Earphone Hanger Hook,UL Tested',
       year: '2021',
       isRunning: false,
     },
@@ -25,36 +25,36 @@ const initalState = {
 export default function reducer(state = initalState, action) {
   switch (action.type) {
     case ADD_TECH: {
-      const newCarId = createId(state.techs);
-      const newCar = { ...action.payload, id: newCarId };
+      const newTechId = createId(state.techs);
+      const newTech = { ...action.payload, id: newTechId };
 
       return {
         ...state,
-        techs: [...state.techs, newCar],
+        techs: [...state.techs, newTech],
       };
     }
     case START_TECH: {
-      const carIndex = state.cars.findIndex((car) => car.id === action.payload);
-      const updatedCar = { ...state.cars[carIndex], isRunning: true };
+      const techIndex = state.techs.findIndex((tech) => tech.id === action.payload);
+      const updatedTech = { ...state.techs[techIndex], isRunning: true };
 
-      const carsCopy = [...state.cars];
-      carsCopy[carIndex] = updatedCar;
+      const techsCopy = [...state.techs];
+      techsCopy[techIndex] = updatedTech;
 
       return {
         ...state,
-        cars: carsCopy,
+        techs: techsCopy,
       };
     }
     case STOP_TECH: {
-      const carIndex = state.cars.findIndex((car) => car.id === action.payload);
-      const updatedCar = { ...state.cars[carIndex], isRunning: false };
+      const techIndex = state.techs.findIndex((tech) => tech.id === action.payload);
+      const updatedTech = { ...state.techs[techIndex], isRunning: false };
 
-      const carsCopy = [...state.cars];
-      carsCopy[carIndex] = updatedCar;
+      const techsCopy = [...state.techs];
+      techsCopy[techIndex] = updatedTech;
 
       return {
         ...state,
-        cars: carsCopy,
+        techs: techsCopy,
       };
     }
     default: {
