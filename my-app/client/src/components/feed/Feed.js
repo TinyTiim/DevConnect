@@ -8,6 +8,11 @@ export default function Feed() {
       <div className="feedWrapper">
         <Post />
         <Posts />
+        <Posts />
+        <Posts />
+        <Posts />
+        <Posts />
+        <Posts />
       </div>
     </div>
   )
