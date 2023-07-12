@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import ProfilePage from "./pages/ProfilePage";
 import CommunityBoardPage from "./pages/CommunityBoard";
 import Nav from './components/Nav';
+import Footer from './components/footer/footer.js';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -25,36 +26,23 @@ const App = () => {
     return <AuthPage onAuth={handleAuth} />;
   } else {
     return (
-       <ApolloProvider client={client}>
+      <ApolloProvider client={client}>
         <Router>
           <div>
-            
-              <Nav />
-              <Routes>
-                <Route 
-                  path="/" 
-                  element={<HomePage />} 
-                />
-                <Route 
-                  path="/chats" 
-                  element={<ChatsPage user={user} />} 
-                />
-              <Route 
-              path="/profile" 
-              element={<ProfilePage username={user.username} />} 
-                />
-                <Route 
-                  path="/community" 
-                  element={<CommunityBoardPage />} 
-                />
-              </Routes>
-            
+            <Nav />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/chats" element={<ChatsPage user={user} />} />
+              <Route path="/profile" element={<ProfilePage username={user.username} />} />
+              <Route path="/community" element={<CommunityBoardPage />} />
+            </Routes>
+            <Footer />
           </div>
         </Router>
       </ApolloProvider>
-       
-     
     );
+  }
+}
 
     // return <HomePage/>
     // (
@@ -63,7 +51,6 @@ const App = () => {
     //   </div>
     // );
     // return <ChatsPage user={user} />;
-  }
-}
+
 
 export default App;
