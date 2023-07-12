@@ -1,14 +1,12 @@
-// add the profile schema and export it 
-
 const mongoose = require('mongoose');
 
-const profileSchema = new mongoose.Schema({
-  username: { type: String, required: true },
-  name: { type: String, required: true },
-  biography: String,
+const userProfileSchema = new mongoose.Schema({
+  username: String,
+  bio: String,
   avatar: String,
+  title: String,
 });
 
-const Profile = mongoose.model('Profile', profileSchema);
+const UserProfile = mongoose.model('UserProfile', userProfileSchema);
 
-module.exports = Profile;
+module.exports = UserProfile;
