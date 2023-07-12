@@ -1,7 +1,12 @@
-import "./feed.css"
+import "./feed.css";
+import Post from "../post/Post";
 
 export default function Feed() {
   return (
-    <div className="feed">Feed</div>
+    <div className="feed">
+      <div className="feedWrapper">
+        <Post />
+      </div>
+    </div>
   )
 }
