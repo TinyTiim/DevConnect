@@ -46,9 +46,9 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-card">
-          <p className="footer-text">name</p>
+          <p className="footer-text">Anirudh Kandikattu</p>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/anirudh-k-97b80aa1/"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-icon"
@@ -56,7 +56,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/Ani-Kandikattu"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-icon"
