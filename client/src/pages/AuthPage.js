@@ -16,7 +16,7 @@ const AuthPage = (props) => {
     return (
       <div className="background">
         <form onSubmit={onSubmit} className="form-card">
-          <div className="form-title">Welcome to DevCenter 👨🏻‍💻</div>
+          <div className="form-title">Welcome to DevConnect 👨🏻‍💻</div>
   
           <div className="form-subtitle">Login Or Sign Up With To Get Started</div>
   
