@@ -67,7 +67,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-card">
-          <p className="footer-text">name</p>
+          <p className="footer-text">Blake Stevens</p>
           <a
             href="https://www.linkedin.com/"
             target="_blank"
@@ -77,7 +77,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/DreadSlack"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-icon"
