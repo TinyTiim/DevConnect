@@ -15,13 +15,13 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  margin-top: -140px; 
+  margin-top: -140px;  /* Set the initial position to hide the nav */
   transition: margin-top 0.3s ease; 
   margin-inline: auto;
 }
 
 .navbar:hover {
-  margin-top: 0; 
+  margin-top: 0;  /* Brings the nav up when hovered */
 }
 
 .navbar-item {
@@ -72,6 +72,7 @@
   transition: opacity 0.3s ease;
 }
 
+/* Media screen for screen sizes*/
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
