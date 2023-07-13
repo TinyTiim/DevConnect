@@ -67,7 +67,7 @@ const Footer = () => {
         <div className="footer-card">
           <p className="footer-text">Blake Stevens</p>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/blake-stevens-6b62151b7/"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-icon"
