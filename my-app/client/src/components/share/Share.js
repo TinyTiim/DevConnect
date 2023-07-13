@@ -5,7 +5,7 @@ export default function Post() {
     <div className="share">
       <div className="shareWrapper">
         <div className="postTop">
-          <img className="shareProfilePicture" src="/images/1.png" alt="" />
+          <img className="shareProfilePicture" src="/images/1.png" alt="" /> 
           <input placeholder="share Something!" className="shareInput"></input>
         </div>
         <hr className="shareHr" />
