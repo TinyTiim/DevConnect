@@ -27,9 +27,9 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-card">
-          <p className="footer-text">Anirudh Kandikattu</p>
+          <p className="footer-text">Alexia Valenzuela</p>
           <a
-            href="https://www.linkedin.com/in/anirudh-k-97b80aa1/"
+            href="https://www.linkedin.com/in/alexia-valenzuela-aa54b4236//"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-icon"
@@ -37,7 +37,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/Ani-Kandikattu"
+            href="https://github.com/alexiaValen"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-icon"
@@ -65,7 +65,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-card">
-          <p className="footer-text">name</p>
+          <p className="footer-text">Blake Stevens</p>
           <a
             href="https://www.linkedin.com/"
             target="_blank"
@@ -75,7 +75,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/DreadSlack"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-icon"
