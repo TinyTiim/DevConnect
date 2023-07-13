@@ -10,6 +10,7 @@ const ProfilePage = ({ username }) => {
     fetchUserProfile();
   }, [username]);
 
+  //Fetches profile data from server
   const fetchUserProfile = () => {
     axios
       .get(`http://localhost:3001/api/userProfile/${username}`)
@@ -24,6 +25,7 @@ const ProfilePage = ({ username }) => {
       });
   };
 
+  //Event handlers for user inputs
   const handleBioChange = (e) => {
     setBio(e.target.value);
   };
@@ -37,6 +39,7 @@ const ProfilePage = ({ username }) => {
     setTitle(e.target.value);
   };
 
+  //Updates profile data on the server
   const updateProfile = () => {
     const updatedProfile = {
       username: username,
@@ -61,19 +64,10 @@ const ProfilePage = ({ username }) => {
       <main>
         <section className="profile">
           <h1 id="profile-name">{username}</h1>
-          <div
-            className="profile-divs"
-            id="profile-avatar"
-            style={{ backgroundImage: `url(${avatar})` }}
-          ></div>
+          <div className="profile-divs" id="profile-avatar" style={{ backgroundImage: `url(${avatar})` }}></div>
           <div className="profile-divs">
             <label htmlFor="title">Title:</label>
-            <input
-              type="text"
-              id="title"
-              value={title}
-              onChange={handleTitleChange}
-            />
+            <input type="text" id="title" value={title} onChange={handleTitleChange} />
           </div>
           <p id="profile-bio">{bio}</p>
           <div className="profile-divs">
@@ -84,9 +78,7 @@ const ProfilePage = ({ username }) => {
             <label htmlFor="avatar">Profile Icon:</label>
             <input type="file" id="avatar" onChange={handleAvatarChange} />
           </div>
-          <button id="edit-profile-btn" onClick={updateProfile}>
-            Save Profile
-          </button>
+          <button id="edit-profile-btn" onClick={updateProfile}>Save Profile</button>
         </section>
       </main>
       <footer></footer>

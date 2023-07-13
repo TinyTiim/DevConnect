@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faUser, faComments, faBullhorn } from '@fortawesome/free-solid-svg-icons';
 
 function Nav() {
+  //Renders navbar based on user auth
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
@@ -77,5 +78,5 @@ function Nav() {
     </div>
   );
 }
-
+//Exports navbar
 export default Nav;
