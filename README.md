@@ -1,6 +1,6 @@
 # DevConnect
 
-[Heroku]`https://dev--connect-de822571753c.herokuapp.com/`
+[Heroku] - https://dev--connect-de822571753c.herokuapp.com/
 
 ## Description
 
