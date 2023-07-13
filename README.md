@@ -64,12 +64,14 @@ https://drive.google.com/file/d/190sa2LrKGFgBQkLPwaUKwkuLgeCkDo4E/view
 
 GitHub profiles:
 TinyTiim
-
+DreadSlack
 
 Emails:
 TinyTiim: sophia.palomo12@gmail.com
+DreadSlack: ballenstev@gmail.com
 
 
 Profile URL:
 https://github.com/TinyTiim
+https://github.com/DreadSlack
 
