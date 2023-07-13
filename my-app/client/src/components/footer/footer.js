@@ -29,9 +29,9 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-card">
-          <p className="footer-text">name</p>
+          <p className="footer-text">Alexia Valenzuela</p>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/alexia-valenzuela-aa54b4236//"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-icon"
@@ -39,7 +39,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/alexiaValen"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-icon"
