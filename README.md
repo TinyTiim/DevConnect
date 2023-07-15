@@ -66,14 +66,17 @@ GitHub profiles:
 TinyTiim
 DreadSlack
 Ani-Kandikattu
+AlexiaValen
 
 Emails:
 TinyTiim: sophia.palomo12@gmail.com
 DreadSlack: ballenstev@gmail.com
 Ani-Kandikattu: anikandikattu@gmail.com
+AlexiaValen: alexiav304@gmail.com
 
 
 Profile URL:
 https://github.com/TinyTiim
 https://github.com/DreadSlack
 https://github.com/Ani-Kandikattu
+https://github.com/AlexiaValen
